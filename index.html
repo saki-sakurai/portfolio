@@ -311,7 +311,7 @@
             </div>
             <div class="profile_conts-read">
               <p class="profile_conts-read_item">保育・介護の専門学校を卒業後、4年間保育園で保育士として勤務。<br>退職後、職業訓練校でWeb制作について学び現在のサンバガラ株式会社に入社。</p>
-              <p class="profile_conts-read_item">主にデザインや保守業務を担当。<br>LP・リニューアル・新規サイト制作のデザインをはじめ、HTML&CSSやJqueryまでを担当した案件も多々あります。</p>
+              <p class="profile_conts-read_item">主にデザインや保守業務を担当。<br>LP・リニューアル・新規サイト制作のデザインをはじめ、HTML&CSSやjQueryまでを担当した案件も多々あります。</p>
               <p class="profile_conts-read_item">デザイナーとして大事にしている事は、コミュニケーションとリサーチ力です。<br>ディレクターがいないプロジェクトが多かった為、直接担当の方とやり取りする事が多く、どのようなサイトを作っていきたいかを会話の中から引き出していけるよう心がけています。<br>クライアントからいただいた参考サイトや、同じ分野のサイトを見て、そこから担当の方がイメージしている部分をすり合わせながら、新たに提案を行い相手が納得出来るデザインを作れるようにしています。</p>
               <p class="profile_conts-read_item">どうぞよろしくお願いいたします。</p>
             </div>
@@ -326,41 +326,6 @@
 </body>
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-<script>
-  $('a[href^="#"]').on('click', function () {
-    var speed = 500;
-    var href = $(this).attr("href");
-    var target = $(href == "#" || href == "" ? 'html' : href);
-    var windowWidth = $(window).width();
-    var windowSm = 980;
-    if (windowWidth <= windowSm) {
-      var position = target.offset().top - 89;
-    } else {
-      var position = target.offset().top - 96;
-    }
-    $("html, body").animate({scrollTop: position}, speed, "swing");
-    return false;
-  });
-
-  $(function(){
-    $('.btn-trigger').on('click', function() {
-      $(this).toggleClass('active');
-      $(".header-nav").fadeToggle(500);
-      return false;
-    });
-
-    $('.header-link').on('click', function() {
-      var windowWidth = $(window).width();
-    var windowSm = 980;
-    if (windowWidth <= windowSm) {
-      $(".header-nav").fadeOut(500);
-    } else {
-    }
-      $(".btn-trigger").toggleClass('active');
-      return false;
-    });
-  });
-
-</script>
+<script type="text/javascript" src="js/script.js"></script>
 
 </html>
