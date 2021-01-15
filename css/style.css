@@ -587,7 +587,6 @@ img {
 .skill_icon-text {
   color: #FFFFFF;
   font-size: 20px;
-  font-weight: bold;
   line-height: 1.3;
   letter-spacing: 0.8px;
 }
@@ -699,6 +698,9 @@ img {
 .works_conts-list_link {
   font-weight: bold;
   color: #333333;
+}
+.works_conts-list_link--type01 {
+  font-size: 12px;
 }
 .works_conts-list_link:hover {
   color: #F4DA48;
